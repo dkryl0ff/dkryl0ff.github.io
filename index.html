@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front-1</title>
+    <title>Просто сайт</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="images/pngtree-computer-pc-icon-vectors-png-image_1789759.ico">
 </head>
-<body>
-    <ul>
+<body class = "body" >
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="#">
+        <img src="images/pngtree-computer-pc-icon-vectors-png-image_1789759.jpg" width="150" height="150" alt="Логотип сайта">
+      </a>
+      <ul class="header_list">
+        <li class="header_item">
+          <a href="#" class="link__1">Ссылка меню 1</a>
+        </li>
+        <li class="header_item">
+          <a href="#" class="link__2">Ссылка 2</a>
+        </li>
+        <li class="header_item">
+          <a href="#" class="link__3">Ссылка 3</a>
+        </li>
+      </ul>
+    </nav>
+    <div name class="name"><h1>Просто сайт</h1></div>
+  </header>
+    <ul class = "ul">
         <li><a href = "http://kubsu.ru">Главная страница сайта Кубгу</a></li>
         <li><a href="https://kubsu.ru">Ссылка на сайт Кубгу в протоколе https</a></li>
-        <li><a href="http://kubsu.ru"><img src="image.jpg" alt="сслыка-изображение" width="250" height="200"></a></li>
+        <li><a href="http://kubsu.ru"><img src="images/image.jpg" alt="сслыка-изображение" width="250" height="200"></a></li>
         <li><a href="/page">Сокращенная ссылка на внутреннюю страницу</a></li>
         <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
         <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
@@ -30,7 +51,7 @@
                     shape="circle">
             </map>
         
-            <img alt="" height="300" src="image.jpg"
+            <img alt="" height="300" src="images/image.jpg"
                  usemap="#area1" width="300">
             <br>Слева вверху - wikipedia, центр - официальный сайт
           </li>
@@ -39,7 +60,7 @@
         <li><a rel = "nofollow" href="https://exapmle.com">Ссылка по которой запрещен переход поисковикам</a></li>
         <li><a rel="noindex" href="https://example.com">Запрещенная для индексации поисковиками ссылка</a></li>
         <li>
-            <ol>
+            <ol class = "ol">
                 <li><a href="http://example.com" title="Ссылка 1">Ссылка 1</a></li>
                 <li><a href="http://example.com" title="Ссылка 2">Ссылка 2</a></li>
                 <li><a href="http://example.com" title="Ссылка 3">Ссылка 3</a></li>
@@ -47,6 +68,50 @@
         </li>
         <li><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
     </ul>
+    <div class="cont_table">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Название 1</th>
+            <th>Название 2</th>
+            <th>Название 3</th>
+            <th>Название 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <h2>Форма</h2>
     <form action="/submit" method="post">
         <label for="full-name">ФИО:</label><br>
@@ -98,8 +163,12 @@
         <input type="checkbox" id="contract" name="contract" required>
         <label for="contract">С контрактом ознакомлен(а)</label><br><br>
 
-        <input type="submit" value="Сохранить">
+        <input type="submit" value="Сохранить"><br><br>
     </form>
+    <footer class = "footer">
+      <p class = "text_footer">©Дмитрий Крылов</p>
+  </footer>
         
 </body>
+
 </html>
