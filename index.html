@@ -27,22 +27,23 @@
     </nav>
     <div name class="name"><h1>Просто сайт</h1></div>
   </header>
+  <main class="main">
     <h2>Маркированный список гиперссылок</h2>
     <ul class = "ul">
-        <li><a href = "http://kubsu.ru">Главная страница сайта Кубгу</a></li>
-        <li><a href="https://kubsu.ru">Ссылка на сайт Кубгу в протоколе https</a></li>
+        <li><a href = "http://kubsu.ru" title="Сайт Кубгу">Главная страница сайта Кубгу</a></li>
+        <li><a href="https://kubsu.ru" title="Сайт Кубгу https">Ссылка на сайт Кубгу в протоколе https</a></li>
         <li><a href="http://kubsu.ru"><img src="images/image.jpg" alt="сслыка-изображение" width="250" height="200"></a></li>
-        <li><a href="/page">Сокращенная ссылка на внутреннюю страницу</a></li>
-        <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-        <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
-        <li><a href="/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами в URL</a></li>
-        <li><a href="/page&id=123">Ссылка с параметром id</a></li>
-        <li><a href="page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
-        <li><a href="about/page.html">Относительная ссылка на страницу в каталоге about</a></li>
-        <li><a href="../page.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
-        <li><a href="../../page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
-        <li>Контекстная ссылка в абзаце <a href="https://example.com">Перейти на сайт example.com</a></li>
-        <li><a href="https://example.com#fragment">Ссылка на фрагмент страницы другого сайта</a></li>
+        <li><a href="/page" title="Cокр ссылка на внутреннюю страницу">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li><a href="/" title="Сокр ссылка на главную страницу">Сокращенная ссылка на главную страницу</a></li>
+        <li><a href="#fragment" title="Фрагмент текущей страницы">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="/page?param1=value1&param2=value2&param3=value3" title="3 параметра">Ссылка с тремя параметрами в URL</a></li>
+        <li><a href="/page&id=123" title="С параметром id">Ссылка с параметром id</a></li>
+        <li><a href="page.html" title="ссылка на страницу в текущем каталоге">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="about/page.html" title="сслыка на страницу каталог about">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../page.html" title="ссылка на страницу в каталоге выше текущего">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../page.html" title="Ссылка на страницу двумя уровнями выше">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+        <li>Контекстная ссылка в абзаце <a href="https://example.com" title="Сайт example.com">Перейти на сайт example.com</a></li>
+        <li><a href="https://example.com#fragment" title="Фрагмент example.com">Ссылка на фрагмент страницы другого сайта</a></li>
         <li>
             <map name="area1">
               <area alt="Тут была прямоугольная область с ссылкой" coords="50,50,250,250" href="https://kubsu.ru"
@@ -56,7 +57,7 @@
                  usemap="#area1" width="300">
             <br>Слева вверху - wikipedia, центр - официальный сайт
           </li>
-        <li><a href="#">Ссылка с пустым href</a></li>
+        <li><a href="#" title = "Пустой href">Ссылка с пустым href</a></li>
         <li><a>Ссылка без href</a></li>
         <li><a rel = "nofollow" href="https://exapmle.com">Ссылка по которой запрещен переход поисковикам</a></li>
         <li><a rel="noindex" href="https://example.com">Запрещенная для индексации поисковиками ссылка</a></li>
@@ -82,20 +83,16 @@
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
-            <td>2</td>
+            <td colspan="2">1</td>
+            <td colspan="2">2</td>
+          </tr>
+          <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="2">2</td>
             <td>3</td>
             <td>4</td>
           </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>2</td>
+          <tr>  
             <td>3</td>
             <td>4</td>
           </tr>
@@ -134,29 +131,21 @@
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Женский</label><br><br>
         
-        <label for="programming-language">Выберите любимые языки программирования:</label><br>
-        <input type="checkbox" name = "lang1" value = "Pascal">
-        <label for="lang1">Pascal</label>
-        <input type="checkbox" name = "lang2" value = "C">
-        <label for="lang2">С</label>
-        <input type="checkbox" name = "lang3" value = "C++">
-        <label for="lang3">С++</label>
-        <input type="checkbox" name = "lang4" value = "JavaScript">
-        <label for="lang4">JavaScript</label>
-        <input type="checkbox" name = "lang5" value = "PHP">
-        <label for="lang5">PHP</label>
-        <input type="checkbox" name = "lang6" value = "Python">
-        <label for="lang6">Python</label>
-        <input type="checkbox" name = "lang7" value = "Java">
-        <label for="lang7">Java</label>
-        <input type="checkbox" name = "lang8" value = "Haskel">
-        <label for="lang8">Haskel</label>
-        <input type="checkbox" name = "lang10" value = "Clojure">
-        <label for="lang9">Clojure</label>
-        <input type="checkbox" name = "lang11" value = "Prolog">
-        <label for="lang10">Prolog</label>
-        <input type="checkbox" name = "lang12" value = "Scala">
-        <label for="lang11">Scala</label><br><br>
+        <label for="programming-language">Любимый язык программирования:</label><br/>
+          <select id="programming-language" name="programming__language" multiple required>
+          
+            <option value="select">Выберите любимый ЯП</option>
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskell">Haskell</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option></select><br/>
         
 
         <label for="biography">Биография:</label><br>
@@ -167,10 +156,9 @@
 
         <input type="submit" value="Сохранить"><br><br>
     </form>
+  </main>
     <footer class = "footer">
       <p class = "text_footer">©Дмитрий Крылов</p>
-  </footer>
-        
+  </footer> 
 </body>
-
 </html>
